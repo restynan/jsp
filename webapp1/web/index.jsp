@@ -11,7 +11,7 @@
     <title>Adding</title>
   </head>
   <body>
-  <form action="add">
+  <form action="add" method ="get">
   Enter first number : <input type ="text" name ="num1"/> </br> </br>
      Enter second number : <input type ="text" name ="num2"/>
 <input type="submit"/>

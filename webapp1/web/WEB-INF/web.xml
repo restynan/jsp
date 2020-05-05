@@ -5,11 +5,20 @@
          version="4.0">
 
     <servlet>
-    <servlet-name>DispatcherServlet</servlet-name>
+    <servlet-name>addServlet</servlet-name>
         <servlet-class>com.example.AddServlet</servlet-class>
 </servlet>
     <servlet-mapping>
-        <servlet-name>DispatcherServlet</servlet-name>
-        <url-pattern>/</url-pattern>
+        <servlet-name>addServlet</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>squareServlet</servlet-name>
+        <servlet-class>com.example.SquareServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>squareServlet</servlet-name>
+        <url-pattern>/sq</url-pattern>
     </servlet-mapping>
 </web-app>
