@@ -7,6 +7,9 @@
   To change this template use File | Settings | File Templates.
 
   Directive     <%@ page import =""%>
+  @page---------->       import=""      language ="java"  isELIngnore="true|false"  extends="className"
+  @include ------>        <%@include file ="header.jsp" %>  - it is used to add another page
+  @taglib  ------>        <%taglib  uri ="" prefix="fx" %>  -t is used to include tags and library of tag. We can also use external tags.
   Declarative  <%!  %> outside service
   Scriplets --- <%  %>  service method
   Expression     <%  =k  %>  out.print(k)
