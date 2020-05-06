@@ -14,7 +14,7 @@
   Scriplets --- <%  %>  service method
   Expression     <%  =k  %>  out.print(k)
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java"  errorPage="error.jsp" %>
 <html>
 <head>
     <title>Title</title>
@@ -22,6 +22,7 @@
 <body bgcolor="#00ffff">
 
 <%!   int addedValue ;
+int k;
 List<Integer> list = new ArrayList<>();
 %>
 
@@ -32,6 +33,8 @@ List<Integer> list = new ArrayList<>();
     int num1= Integer.parseInt(request.getParameter("num1"));
     int num2= Integer.parseInt(request.getParameter("num2"));
     addedValue = num1 + num2;
+
+   k=9/0;
 
 %>
 
